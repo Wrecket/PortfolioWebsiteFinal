@@ -1,117 +1,137 @@
 /* general styling */
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 h1 {
-    font-size: 4rem;
+	font-size: 4rem;
+}
+
+.skill-icon {
+	width: 50px;
 }
 
 .project-btn {
-    position: absolute;
-    bottom: 5%;
-    left: 45%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+	width: 100%;
 }
 
 a:hover {
-    color: rgb(241, 174, 50)!important;
+	color: rgb(241, 174, 50) !important;
 }
 
 a {
-    color: black!important;
+	color: black !important;
 }
 
 button a:hover {
-    color: white;
+	color: white;
 }
 
 /* containers */
 .portrait-container-outer {
-    background-color: rgb(241, 174, 50);
-    width: auto !important;
-    height: auto !important;
+	background-color: rgb(241, 174, 50);
+	width: auto !important;
+	height: auto !important;
 }
 
 #project-description {
-    height: 92%;
-    background-color: rgba(93, 100, 91, 0.075);
-    position: relative;
+	height: auto !important;
+	background-color: rgba(93, 100, 91, 0.075);
+	position: relative;
 }
-
 
 .img-container {
-    border-radius: 50% !important;
-    overflow: hidden;
-    width: 15rem;
-    position: relative;
+	border-radius: 50% !important;
+	overflow: hidden;
+	width: 15rem;
+	position: relative;
 }
 .tag {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(255, 255, 255, 0.767);
-    position: absolute;
-    top: 40%;
+	width: 100%;
+	height: 3rem;
+	background-color: rgba(255, 255, 255, 0.767);
+	position: absolute;
+	top: 40%;
 }
 
 .project-image-container {
-    width: 150rem;
+	width: 150rem;
 }
 
 .col-6 {
-    max-width: 100% !important;
+	max-width: 100% !important;
 }
 
-/* reuseable code */
-
-.project-image{
-    width: 90%;
+.project-image {
+	width: 90%;
 }
 
 .portrait-container {
-    width: 60%;
-    border-top-right-radius: 60%;
-    overflow: hidden;
+	width: 60%;
+	border-top-right-radius: 60%;
+	overflow: hidden;
 }
 
+.padder {
+	height: 50px;
+}
+
+.skills-container {
+	background-color: rgba(128, 128, 128, 0.11);
+}
+
+.skills-header {
+	background-color: rgba(128, 128, 128, 0.11);
+}
+/* reuseable code */
+
 .font {
-    font-family: 'Dosis', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 .bg-blue {
-    background-color: rgba(218, 218, 218, 0.212);
+	background-color: rgba(218, 218, 218, 0.212);
 }
 
 .bg-red {
-    background-color: rgba(255, 0, 0, 0.014);
+	background-color: rgba(255, 0, 0, 0.014);
 }
 
 .n-border {
-    border-top: 5px solid rgba(124, 124, 124, 0.219);
-    border-right: 10px solid rgba(124, 124, 124, 0.219);
-    
+	border-top: 5px solid rgba(124, 124, 124, 0.219);
+	border-right: 10px solid rgba(124, 124, 124, 0.219);
 }
 
 .color {
-    color: rgb(241, 174, 50);
+	color: rgb(241, 174, 50);
 }
 
 .bold {
-    font-weight: bold!important;
+	font-weight: bold !important;
 }
 
 .line-red {
-    width: 100%;
-    height: 2px;
-    background-color: rgba(93, 100, 91, 0.5);
+	width: 100%;
+	height: 2px;
+	background-color: rgba(93, 100, 91, 0.5);
 }
 .hide {
-    display: none;
+	display: none;
 }
 
 .large-1 {
-    font-size: 6rem;
+	font-size: 6rem;
 }
 
 .large-2 {
-    font-size: 7rem;
+	font-size: 7rem;
 }
