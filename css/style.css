@@ -4,10 +4,6 @@ body {
 	height: 100%;
 }
 
-h1 {
-	font-size: 4rem;
-}
-
 .skill-icon {
 	width: 50px;
 }
@@ -36,11 +32,20 @@ button a:hover {
 	color: white;
 }
 
+.star {
+	width: 30px;
+	height: 30px;
+}
+
 /* containers */
 .portrait-container-outer {
 	background-color: rgb(241, 174, 50);
 	width: auto !important;
 	height: auto !important;
+}
+
+.skills-title {
+	width: 15%;
 }
 
 #project-description {
@@ -52,7 +57,7 @@ button a:hover {
 .img-container {
 	border-radius: 50% !important;
 	overflow: hidden;
-	width: 15rem;
+	width: 15em;
 	position: relative;
 }
 .tag {
@@ -81,6 +86,11 @@ button a:hover {
 	overflow: hidden;
 }
 
+.contact-box {
+	justify-content: center;
+	align-items: center;
+}
+
 .padder {
 	height: 50px;
 }
@@ -92,10 +102,25 @@ button a:hover {
 .skills-header {
 	background-color: rgba(128, 128, 128, 0.11);
 }
+
+.toolbox {
+	display: block;
+	width: 100%;
+	height: 30%;
+	padding: 10px 110px!important;
+	white-space: nowrap;
+}
 /* reuseable code */
+.blank {
+	opacity: 0;
+}
+
+.mobile {
+	display: none;
+} 
 
 .font {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .bg-blue {
@@ -129,9 +154,145 @@ button a:hover {
 }
 
 .large-1 {
-	font-size: 6rem;
+	font-size: 5rem;
 }
 
 .large-2 {
-	font-size: 7rem;
+	font-size: 3rem;
 }
+
+/* Media queries */
+
+@media (max-width: 650px) {
+	.mobile {
+		display: inline-block
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.svg-line {
+		/* display: inline-block!important;; */
+		flex-wrap: wrap;
+	}
+
+	.skillbox {
+		width: 30%;
+		margin: 1%;
+		padding: 0 1%;
+		
+	}
+	
+	.skills-container {
+		padding: 0!important;
+		height: auto!important;
+	}
+	
+	.toolbox {
+		padding: 2% 10%!important;
+	}
+
+	.img-container {
+		margin-left: auto!important;
+		margin-right: auto!important;;
+	}
+
+	.large-1 {
+		font-size: 3rem;
+		white-space: nowrap;
+	}
+}
+
+/* animation */
+
+.float-tec {
+	height: 600px;
+	position: relative;
+	background-image: url("../img/clouds.jpg")!important;
+  }
+
+  .floaterbubble1 {
+	width: 100px;
+	animation: MoveUpDown1 9s linear infinite;
+	position: absolute;
+	left: 2%;
+	bottom: 38%;
+	transition: all 3s;
+  }
+
+  .floaterbubble1:hover {
+	 transform: scale(1.5);
+  }
+  .floaterbubble2:hover {
+	transform: scale(1.5);
+ }
+ .floaterbubble3:hover {
+	transform: scale(1.5);
+ }
+ .floaterbubble4:hover {
+	transform: scale(1.5);
+ }
+
+  .floaterbubble2 {
+	width: 100px;
+	animation: MoveUpDown2 4s linear infinite;
+	position: absolute;
+	left: 12%;
+	bottom: 75%;
+	transition: all 3s;
+  }
+
+  .floaterbubble3 {
+	width: 100px;
+	animation: MoveUpDown3 2s linear infinite;
+	position: absolute;
+	left: 20%;
+	bottom: 47%;
+	transition: all 3s;
+  }
+
+  .floaterbubble4 {
+	width: 100px;
+	animation: MoveUpDown4 6s linear infinite;
+	position: absolute;
+	left: 13%;
+	bottom: 28%;
+	transition: all 3s;
+  }
+  
+  @keyframes MoveUpDown1 {
+	0%, 100% {
+	  left: 2%;
+	}
+	50% {
+	  bottom: 40%;
+	}
+  }
+
+  @keyframes MoveUpDown2 {
+	0%, 100% {
+	  left: 11%;
+	}
+	50% {
+	  bottom: 74%;
+	}
+  }
+
+  @keyframes MoveUpDown3 {
+	0%, 100% {
+	  left: 23%;
+	}
+	50% {
+	  bottom: 46%;
+	}
+  }
+
+  @keyframes MoveUpDown4 {
+	0%, 100% {
+	  left: 13%;
+	}
+	50% {
+	  bottom: 26%;
+	}
+  }
