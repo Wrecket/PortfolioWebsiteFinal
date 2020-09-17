@@ -109,3 +109,43 @@
           </div>
         </div>    
     </div>
+
+
+
+
+    <div id="projects" class="container-fluid mb-5">
+                <div class="row">
+                    <div class="col-lg-4 m-0">
+                      <div class="padder"></div>
+                        <div id="x1" class="floater1 project container shadow project-image p-0 mb-5">
+                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/featherdeskmob.jpg" alt="featherwold">
+                        </div>
+                        <!--  -->
+                        <div id="x2" class="floater2 project container shadow project-image p-0 mb-5">
+                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/gmcb.JPG" alt="Grandma's cookbook"></a>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 mb-5 text-center">
+                      <div id="project-main" class="padder"></div>
+                        <div id="project-description" class="container pt-3">
+                            <h2 id="name" class="mb-3">Recent Projects</h2>
+                            <p id="remove">Select a project for more information.</p>
+                            <div id="img" class="text-center mb-4"></div>
+                            <p id="description"></p>
+                            <div class="padder"></div>
+                            <div id="button"></div>
+                        </div>
+                     </div>
+                    <div class="col-lg-4 m-0">
+                      <div class="padder"></div>
+                        <div id="x3" class="floater3 project container shadow project-image p-0 mb-5">
+                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/ryanmob2.jpg" alt="Ryans Woodworks"></a>
+                        </div>
+                        <!--  -->
+                        <div id="x4" class="floater4 project container shadow project-image p-0 mb-5">
+                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/movie.JPG" alt="Gradient finder tool"></a>
+                            <button id="button" type="button" class="btn btn-secondary hide">Secondary</button>
+                        </div>
+                     </div>
+                </div>
+            </div>

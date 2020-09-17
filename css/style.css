@@ -20,6 +20,17 @@ body {
 	width: 100%;
 }
 
+.project {
+	opacity: 1;
+	transition: opacity 1000ms;
+}
+
+.skybanner {
+	height: auto!important;
+	overflow: hidden;
+	background-image: url("../img/clouds.jpg")
+}
+
 a:hover {
 	color: rgb(241, 174, 50) !important;
 }
@@ -37,6 +48,11 @@ button a:hover {
 	height: 30px;
 }
 
+.cloud-text {
+	font-size: 5em;
+	color: white;
+}
+
 /* containers */
 .portrait-container-outer {
 	background-color: rgb(241, 174, 50);
@@ -52,6 +68,7 @@ button a:hover {
 	height: auto !important;
 	background-color: rgba(93, 100, 91, 0.075);
 	position: relative;
+	transition: 5s all;
 }
 
 .img-container {
@@ -114,7 +131,17 @@ button a:hover {
 .blank {
 	opacity: 0;
 }
+.whitebar {
+	width: 100%;
+	height: 5px;
+	background-color: white;
+}
 
+.orangebar {
+	width: 100%;
+	height: 5px;
+	background-color: rgb(247, 180, 57);
+}
 .mobile {
 	display: none;
 } 
@@ -137,7 +164,15 @@ button a:hover {
 }
 
 .color {
-	color: rgb(241, 174, 50);
+	color: rgb(255, 196, 0);
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
 }
 
 .bold {
@@ -161,9 +196,123 @@ button a:hover {
 	font-size: 3rem;
 }
 
-/* Media queries */
+/* animation */
 
-@media (max-width: 650px) {
+.float-tec {
+	height: 800px;
+	position: relative;
+	background-image: url("../img/clouds.jpg")!important;
+	background-size: cover;
+  }
+
+  .proj-img-container {
+	  width: 50%;
+	  margin-right: 0!important;
+	  padding-right: 0!important;
+  }
+
+  .phone1 {
+	width: 100px !important;
+	left: 2% ;
+	bottom: 38% ;
+	position: absolute ;
+	transform: rotate(2deg);
+  }
+
+  .phone2 {
+	width: 100px !important;
+	position: absolute;
+	left: 12%;
+	bottom: 65%;
+	transform: rotate(-3deg);
+  }
+
+  .phone3 {
+	width: 100px !important;
+	position: absolute;
+	left: 21%;
+	bottom: 37%;
+	transform: rotate(-8deg);
+  }
+
+  .phone4 {
+	width: 100px !important;
+	position: absolute;
+	left: 13%;
+	bottom: 18%;
+	transform: rotate(10deg);
+  }
+
+ .x1 {
+	animation: MoveUpDown1 6s linear infinite !important;
+	transition: all 8s !important;
+  }
+
+  .x2 {
+	animation: MoveUpDown2 4s linear infinite !important;
+	transition: all 10s !important;
+	
+  }
+
+  .x3 {
+	animation: MoveUpDown3 2s linear infinite !important;
+	transition: all 6s !important;
+	
+  }
+
+  .x4 {
+	animation: MoveUpDown4 5s linear infinite !important;
+	transition: all 3s !important;
+  }
+  
+  @keyframes MoveUpDown1 {
+	0%, 100% {
+	  left: 2%;
+	}
+	50% {
+	  bottom: 40%;
+	}
+  }
+
+  @keyframes MoveUpDown2 {
+	0%, 100% {
+	  left: 12%;
+	}
+	50% {
+	  bottom: 64%;
+	}
+	
+  }
+
+  @keyframes MoveUpDown3 {
+	0%, 100% {
+	  left: 21%;
+	}
+	50% {
+	  bottom: 36%;
+	}
+  }
+
+  @keyframes MoveUpDown4 {
+	0%, 100% {
+	  left: 13%;
+	}
+	50% {
+	  bottom: 16%;
+	}
+  }
+
+  #projects {
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+ }
+
+ /* media */
+
+ @media (max-width: 700px) {
 	.mobile {
 		display: inline-block
 	}
@@ -202,97 +351,108 @@ button a:hover {
 		font-size: 3rem;
 		white-space: nowrap;
 	}
+
+	.phone1 {
+		width: 80px !important;
+		left: 2% ;
+		bottom: 5% ;
+		position: absolute;
+		transform: none;
+	  }
+	
+	  .phone2 {
+		width: 80px !important;
+		position: absolute;
+		left: 52%;
+		bottom: 5%;
+		transform: none;
+	  }
+	
+	  .phone3 {
+		width: 80px !important;
+		position: absolute;
+		left: 77%;
+		bottom: 5%;
+		transform: none;
+	  }
+	
+	  .phone4 {
+		width: 80px !important;
+		position: absolute;
+		left: 27%;
+		bottom: 5%;
+		transform: none;
+	  }
+
+	  .x1 {
+		animation: none !important;
+		transition: all 8s !important;
+	  }
+	
+	  .x2 {
+		animation: none !important;
+		transition: all 10s !important;
+		
+	  }
+	
+	  .x3 {
+		animation: none !important;
+		transition: all 6s !important;
+		
+	  }
+	
+	  .x4 {
+		animation: none !important;
+		transition: all 3s !important;
+	  }
+
+	  @keyframes MoveUpDown1 {
+		0%, 100% {
+		  left: 5%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+	
+	  @keyframes MoveUpDown2 {
+		0%, 100% {
+		  left: 15%;
+		}
+		50% {
+		  bottom: 0;
+		}
+		
+	  }
+	
+	  @keyframes MoveUpDown3 {
+		0%, 100% {
+		  left: 20%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+	
+	  @keyframes MoveUpDown4 {
+		0%, 100% {
+		  left: 25%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+
+	  .float-tec {
+		  height: 1000px !important;
+	  }
+
+	  .proj-img-container {
+		  width: 100% !important;
+	  }
+
+	  .toolbox {
+		  margin-bottom: 5%;
+		  margin-top: 5%;
+	  }
 }
-
-/* animation */
-
-.float-tec {
-	height: 600px;
-	position: relative;
-	background-image: url("../img/clouds.jpg")!important;
-  }
-
-  .floaterbubble1 {
-	width: 100px;
-	animation: MoveUpDown1 9s linear infinite;
-	position: absolute;
-	left: 2%;
-	bottom: 38%;
-	transition: all 3s;
-  }
-
-  .floaterbubble1:hover {
-	 transform: scale(1.5);
-  }
-  .floaterbubble2:hover {
-	transform: scale(1.5);
- }
- .floaterbubble3:hover {
-	transform: scale(1.5);
- }
- .floaterbubble4:hover {
-	transform: scale(1.5);
- }
-
-  .floaterbubble2 {
-	width: 100px;
-	animation: MoveUpDown2 4s linear infinite;
-	position: absolute;
-	left: 12%;
-	bottom: 75%;
-	transition: all 3s;
-  }
-
-  .floaterbubble3 {
-	width: 100px;
-	animation: MoveUpDown3 2s linear infinite;
-	position: absolute;
-	left: 20%;
-	bottom: 47%;
-	transition: all 3s;
-  }
-
-  .floaterbubble4 {
-	width: 100px;
-	animation: MoveUpDown4 6s linear infinite;
-	position: absolute;
-	left: 13%;
-	bottom: 28%;
-	transition: all 3s;
-  }
-  
-  @keyframes MoveUpDown1 {
-	0%, 100% {
-	  left: 2%;
-	}
-	50% {
-	  bottom: 40%;
-	}
-  }
-
-  @keyframes MoveUpDown2 {
-	0%, 100% {
-	  left: 11%;
-	}
-	50% {
-	  bottom: 74%;
-	}
-  }
-
-  @keyframes MoveUpDown3 {
-	0%, 100% {
-	  left: 23%;
-	}
-	50% {
-	  bottom: 46%;
-	}
-  }
-
-  @keyframes MoveUpDown4 {
-	0%, 100% {
-	  left: 13%;
-	}
-	50% {
-	  bottom: 26%;
-	}
-  }

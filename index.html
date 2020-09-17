@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Matt Fuller - Portfolio</title>
 </head>
 <header>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav data-aos-duration="3000" data-aos="fade-in" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img class="img-fluid" src="img/crown-outline.png" alt="logo" width="25px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects-start">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -32,11 +34,15 @@
     <!-- /nav -->
 </header>
 <body class="font">
-    <div class="container text-center mt-5 mb-5">
-        <h1 class="large-1">Hello,<br> I'm <span class="color bold">Matt </span>Fuller</h1>
-        <h3>The Front-End <span class="color bold">Web </span>Developer that you've been looking for.</h3>
+  <div class="container-fluid skybanner m-0 p-0">
+    <div data-aos-duration="3000" data-aos="fade-in" class="white container text-center mt-5 mb-5">
+      <h1 class="large-1">Hello,<br> I'm <span class="animate__animate nametop color bold">Matt </span>Fuller</h1>
+      <h3>The Front-End <span class="color bold">Web </span>Developer that you've been looking for.</h3>
     </div>
-    <div class="container-fluid bg-blue pt-5">
+  </div>
+  <div class="whitebar"></div>
+  <div class="orangebar"></div>
+    <div data-aos-duration="3000" data-aos="fade-in" class="container-fluid bg-blue pt-5">
         <div class="container">
             <div class="row">
               <div class="col-lg">
@@ -64,75 +70,48 @@
           </div>
     </div>
     <!--  --> 
-    <div id="me" class="container text-center p-3 mt-5 mb-2 pr-0">
+    <div data-aos-duration="3000" data-aos="fade-in" id="me" class="container text-center p-3 mt-5 mb-2 pr-0">
       <h2>A bit about me</h2>
       <div class="line-red mb-2"></div>
       <p>I'm <span class="color bold">Matt Fuller</span>, a self taught front-end <span class="color bold">web</span> developer, living in the heart of Hampshire. <br> I first learnt to code as a hobby, an ingrained curiosity that grew exponentially as I learned more and more. <br> <span class="color bold">Coding</span> is not just my career, it's my passion.</p>
       <a class="resume" href="docs/MJF-CV.pdf" download="CV"><button type='button' class='btn btn-warning'>Download Resume</button></a> 
     </div>
 
-    <div class="container-fluid float-tec">
+    <div data-aos-duration="3000" data-aos="fade-in" id="projects-start" class="container-fluid float-tec">
+      <h2 class="text-right bold cloud-text">Recent <span class="color bold">Projects</span></h2>
       <div class="container-fluid">
-        <img src="img/mobilefeather.png" class="img-fluid floaterbubble1">
-        <img src="img/mobilefeather.png" class="img-fluid floaterbubble2">
-        <img src="img/mobilefeather.png" class="img-fluid floaterbubble3">
-        <img src="img/mobilefeather.png" class="img-fluid floaterbubble4">
+        <img src="img/mobilefeather.png" id="x1" class="float-proj phone1 animate__animated img-fluid x1">
+        <img src="img/gmcbmob.png" id="x2" class="float-proj phone2 animate__animated img-fluid x2">
+        <img src="img/ryanmob.png" id="x3" class="float-proj phone3 animate__animated img-fluid x3">
+        <img src="img/moviemob.png" id="x4" class="float-proj phone4 animate__animated img-fluid x4">
+      </div>
+      <div class="white test container-fluid">
+        <div id="projects" class="container-fluid text-right">
+          <h2 id="name" class="mt-5">Select a <span class="color bold">Project</span></h2>
+          <p id="remove">Select a <span class="color bold">project</span> for more information.</p>
+          <div class="proj-img-container container-fluid d-flex">
+            <div id="img" class="shadow text-center mb-4"></div>
+          </div>
+          <div class="container black bold text-right mr-0 pr-0">
+            <p id="description"></p>
+          </div>
+          <div class="padder"></div>
+          <div id="button"></div>
+        </div>
       </div>
     </div>
 
-    <!-- 
-      <!-- 
-        <!-- 
-          <!-- 
-            <!--  -->
-           -->
-         -->
-       -->
-     -->
     <div class="container-fluid">
         <div class="container-fluid">
                 <!-- grid -->
-            <div id="projects" class="container-fluid mb-5">
-                <div class="row">
-                    <div class="col-lg-4 m-0">
-                      <div class="padder"></div>
-                        <div id="x1" class="floater1 project container shadow project-image p-0 mb-5">
-                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/featherdeskmob.jpg" alt="featherwold">
-                        </div>
-                        <!--  -->
-                        <div id="x2" class="floater2 project container shadow project-image p-0 mb-5">
-                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/gmcb.JPG" alt="Grandma's cookbook"></a>
-                        </div> 
-                    </div>
-                    <div class="col-lg-4 mb-5 text-center">
-                      <div id="project-main" class="padder"></div>
-                        <div id="project-description" class="container pt-3">
-                            <h2 id="name" class="mb-3">Recent Projects</h2>
-                            <p id="remove">Select a project for more information.</p>
-                            <div id="img" class="text-center mb-4"></div>
-                            <p id="description"></p>
-                            <div class="padder"></div>
-                            <div id="button"></div>
-                        </div>
-                     </div>
-                    <div class="col-lg-4 m-0">
-                      <div class="padder"></div>
-                        <div id="x3" class="floater3 project container shadow project-image p-0 mb-5">
-                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/ryanmob2.jpg" alt="Ryans Woodworks"></a>
-                        </div>
-                        <!--  -->
-                        <div id="x4" class="floater4 project container shadow project-image p-0 mb-5">
-                          <a target="blank" href="#project-main"><img class="img-fluid" src="img/movie.JPG" alt="Gradient finder tool"></a>
-                            <button id="button" type="button" class="btn btn-secondary hide">Secondary</button>
-                        </div>
-                     </div>
-                </div>
-            </div>
+            
                 <!-- /grid -->
         </div>
     </div>
     <!-- skills -->
-<div class="container-fluid mt-0 pt-5 pb-4 text-center skills-container">
+    <div class="whitebar"></div>
+    <div class="orangebar"></div>
+<div data-aos-duration="3000" data-aos="fade-in" class="container-fluid mt-0 pt-5 pb-4 text-center skills-container">
   <div class=" container mobile toolbox">
     <h2 class="tools">My <span class="color bold">Tools</span></h2>
     <div class="line-red mb-2"></div>
@@ -143,9 +122,9 @@
     <div class="row">
       <div class="col-sm-5">
         <div class="container">
-          <h2 class="text-left">My Tools</h2>
-          <p class="text-left">A developer is only ever as good as his tools... Luckily there's a few in my toolbox.<br>
-          From website design, to React app creation, and all the way to designing the perfect logo, my skill set encompasses the entirety of Front-End Web Development and beyond.</p>
+          <h2 class="text-left bold desktop">My Tools</h2>
+          <p class="text-left">A <span class="color bold">developer</span> is only ever as good as his tools... Luckily there's a few in my <span class="color bold">toolbox</span>.<br>
+          From website design, to <span class="color bold">React</span> app creation, and all the way to designing the perfect logo, my skill set encompasses the entirety of Front-End Web <span class="color bold">Development</span> and beyond.</p>
         </div>
       </div>
       <div class="col-sm-2">
@@ -328,7 +307,7 @@
     <!-- /grid skill -->
     <!-- svg end -->
     <!-- /skills -->
-    <div id="contact" class="mt-5 text-center container-fluid">
+    <div data-aos-duration="3000" data-aos="fade-in" id="contact" class="mt-5 text-center container-fluid">
       <h2 class="mr-5">Want to know more? <span class="color bold large-2">Lets Connect!</span></h2>
       <p>Feel free to drop me a <span class="color bold">message</span>, even if just to say <span class="color bold">hi!</span></p>
       <div class="container contact-box d-flex">
@@ -339,6 +318,8 @@
   </div>
   <div class="padder"></div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
