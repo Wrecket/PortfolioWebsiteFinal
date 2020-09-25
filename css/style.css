@@ -28,7 +28,8 @@ body {
 .skybanner {
 	height: auto!important;
 	overflow: hidden;
-	background-image: url("../img/clouds.jpg")
+	background-image: url("../img/clouds.jpg");
+	background-attachment: fixed;
 }
 
 a:hover {
@@ -76,6 +77,11 @@ button a:hover {
 	overflow: hidden;
 	width: 15em;
 	position: relative;
+	transition: 1s all;
+}
+
+.img-container:hover {
+	transform : scale(1.1);
 }
 .tag {
 	width: 100%;
@@ -203,6 +209,7 @@ button a:hover {
 	position: relative;
 	background-image: url("../img/clouds.jpg")!important;
 	background-size: cover;
+	background-attachment: fixed;
   }
 
   .proj-img-container {
